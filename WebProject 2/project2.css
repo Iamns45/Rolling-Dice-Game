@@ -1,0 +1,330 @@
+
+body {
+    background: #63B7B7;
+    font-family: 'Lato', sans-serif;
+    color: #FDFCFB;
+    text-align: center;
+    background-image: linear-gradient(45deg, #845ec2, #ff6f91, #f9f871, #ececbc, #65b9b9);
+    background-size: 400% 400%;
+    animation: bg-animation 20s infinite;
+}
+
+.title{
+    font-family: Cursive;
+    color: limegreen;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+form {
+    width: 450px;
+    margin: 10% auto;
+}
+
+.about {
+    margin-top: 100px;
+    padding-bottom: 55px
+}
+
+.signup {
+    font-size: 18pt;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: yellowgreen;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-family: "Merriweather Sans";
+    font-style: italic;
+    font-size: 16pt;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #00a3b3;
+}
+
+.active {
+    background-color: #009900;
+}
+
+h1 {
+    font-size: 115%;
+    margin: 1em 2em;
+    padding: 0;
+    position: relative;
+}
+
+.content {
+    padding: 0 0 0 3em;
+    font-size: 16px;
+}
+
+
+.userinput {
+    border: 0;
+    font-size: 16pt;
+    text-align: center;
+    outline: none;
+    color: navy;
+    font-family: fantasy;
+}
+
+.header {
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.description {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.3em;
+    margin: -2px 0 45px;
+}
+
+/* .input {
+  display: flex;
+  align-items: center;
+} */
+
+.checkboxy {
+    display: block;
+    position: static;
+    height: 25px;
+    margin-top: 10px;
+    clear: both;
+}
+
+.button {
+    height: 44px;
+    border: none;
+    padding: 10px;
+}
+
+.inputcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputbutton {
+    height: 44px;
+    border: none;
+    width: 150px;
+    color: white;
+    background-color: rgb(255, 0, 68);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #f9e506;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+}
+
+.inputbutton:hover {
+    box-shadow: inset 151px 0 0 0 #f9e506;
+    cursor: pointer;
+    color: #000;
+}
+
+#email, #name {
+    width: 100%;
+    margin: 5px;
+    background: #FDFCFB;
+    font-family: inherit;
+    color: #737373;
+    letter-spacing: 1px;
+    text-indent: 5%;
+    border-radius: 5px;
+}
+
+/* #submit {
+  cursor: grab;
+  height: 46px;
+  background: #E86C8D;
+  font-family: inherit;
+  font-weight: bold;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  color: inherit;
+  letter-spacing: 1px;
+} */
+
+td:nth-child(3n) {
+    border-right: 2px solid black;
+}
+
+tr:nth-child(3n) {
+    border-bottom: 2px solid black;
+}
+
+table {
+    font-family: fantasy;
+    font-size: 20pt;
+    border: 2px solid #000000;
+    background: grey;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000000;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#danger {
+    background-color: red;
+    height: 50px;
+    width: 80px;
+    text-align: center;
+}
+
+#show {
+    margin-bottom: 100px;
+    font-family: cursive;
+    font-style: italic;
+    color: black;
+    font-size: 18pt;
+}
+
+#names {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+.user_guess {
+    width: 150px;
+}
+
+#player1, #player2 {
+    height: 150px;
+    margin-top: 90px;
+    border-radius: 55px;
+    background: #006666;
+    margin-right: 25px;
+    margin-bottom: 150px;
+}
+
+input[type=text]#user_guess {
+    display: block;
+}
+
+#main {
+    margin-left: 50px;
+    width: 1200px;
+    height: 300px;
+    border: 0 solid black;
+    display: flex;
+}
+
+#main div {
+    flex-basis: 60%;
+    margin-left: 20px;
+    margin-top: -50px;
+}
+
+#main div:nth-of-type(2) {
+    flex-basis: 40%;
+    margin-left: 20px;
+    margin-top: -105px;
+}
+
+.scoresection {
+    padding: 10px;
+    height: 550px;
+    background-color: white;
+    border-style: inset;
+    width: 400px;
+}
+
+.skewed {
+    background: url(//stephy.mccdgm.net/images/patterns/dark_wood.png) #2b2b2b;
+    transform: skew(-28.5deg);
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.skewed span {
+    font-family: Oswald, sans-serif;
+    font-size: 24pt;
+    padding: 0px; /* to extend the border past the text */
+    margin-top: 10px;
+    background: #FFDF00;
+    box-shadow: 0 0 0px 10px #FFDF00;
+    border: 10px solid #fff;
+}
+
+.welcome {
+    color: navy;
+    font-size: 20pt;
+    font-style: italic;
+}
+
+.contact {
+    font-size: 22pt;
+    color: black;
+    font-family: Lucida;
+}
+
+.contact h3 {
+    color: white;
+    font-size: 18pt;
+    font-family: cursive;
+    text-decoration: underline;
+}
+
+#game {
+    margin-top: 100px;
+}
+
+.contact p {
+    color: white;
+    font-size: 16pt;
+}
+
+.containerz {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.errorheading{
+    font-size: xxx-large;
+    text-align: center;
+    font-family: cursive;
+}
+
+.errorcontent{
+    font-family:Georgia;
+    font-size: x-large;
+}
